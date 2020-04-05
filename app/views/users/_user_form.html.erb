@@ -1,0 +1,20 @@
+
+<%= form_for @user do |t| %>
+  <ul>
+    <li><%= t.label :username %></li>
+    <li><%= t.text_field :username %></li><br/>
+    <li><%= t.label :email %></li>
+    <li><%= t.email_field :email %></li><br/>
+    <li><%= t.label :password %></li>
+    <li><%= t.password_field :password %></li><br/>
+    <li><%= t.label :city %></li>
+    <li><%= t.text_field :city %></li><br/>
+    <li><%= t.label :address %></li>
+    <li><%= t.text_field :address %></li><br/>
+
+    <li><%= t.submit %></li><br/>
+
+  </ul>
+
+
+<% end %>

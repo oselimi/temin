@@ -1,0 +1,8 @@
+<h1>Welcome to your blog <%= @user.username %></h1>
+<%= link_to 'Back to list ', users_path %>
+<h3>History</h3>
+<h5><%= @user.email %></h5>
+<h5><%= @user.address %></h5>
+<h5><%= @user.city %></h5>
+<%= link_to 'Edit your privatcy', edit_user_path %>
+
