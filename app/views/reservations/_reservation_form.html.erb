@@ -1,0 +1,11 @@
+<%= form_for @reservation do |f| %>
+  <ul>
+    <li><%= f.label :motiv %></li>
+    <li><%= f.text_field :motiv %></li><br/>
+    <li><%= f.label :choose %></li>
+    <li><%= f.datetime_field :choose %></li><br/>
+
+    <li><%= f.submit %></li><br/>
+
+  </ul>
+  <% end %>

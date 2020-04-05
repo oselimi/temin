@@ -1,0 +1,14 @@
+<h1>List of reservations </h1>
+<%= link_to 'Create reservations', new_reservation_path %>
+<br/>
+<br/>
+<% @reservations.each do |reservation| %>
+  <ul>
+
+    <li><%= reservation.motiv %></li>
+    <li><%= reservation.choose%></li>
+    <li><%= link_to 'View', reservation_path(reservation) %></li>
+    <li><%= link_to 'Edit', edit_reservation_path(reservation) %>
+    <li><%= link_to 'Delete', reservation_path(reservation), method: :delete, data: {confirm: "Are you sure" }%>
+  </ul>
+<% end %>

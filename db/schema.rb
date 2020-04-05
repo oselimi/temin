@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200405111559) do
+ActiveRecord::Schema.define(version: 20200405131501) do
+
+  create_table "reservations", force: :cascade do |t|
+    t.string "motiv"
+    t.datetime "choose"
+    t.integer "user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
